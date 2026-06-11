@@ -1,0 +1,33 @@
+seed,20260611
+R_req,0.65
+tau_safe,0.006
+mission_n_shift,60
+mission_n_planning,45
+
+domain,N,failure_free,Evidence retrieval,Root-cause reasoning,Grounding/citation,Unsafe recommendation
+Rotating machinery,600,600.000,0.000,0.000,0.000,0.000
+Process control,500,497.000,0.000,1.000,0.000,2.000
+Power electronics,420,416.000,2.000,0.000,1.000,1.000
+Robotic-cell troubleshooting,360,354.000,1.000,0.000,2.000,3.000
+
+metric,value
+single_demand_accuracy,0.99361905
+reliability_accuracy_n60,0.68107431
+reliability_classical_n60,0.68496060
+reliability_imprecise_lower_n60,0.65654121
+reliability_imprecise_upper_n60,0.69672085
+profile_uncertain_lower_n60,0.50502743
+profile_uncertain_upper_n60,0.69672085
+reliability_severity_weighted_plugin_n60,0.78713004
+reliability_severity_weighted_predictive_n60,0.78913251
+unsafe_upper_probability,0.00491960
+unsafe_mission_probability_n45,0.19902718
+unsafe_mission_probability_n60,0.25614143
+unsafe_mission_probability_n100,0.38931495
+risk_targeted_allocation_d1,0.02982261
+risk_targeted_allocation_d2,0.27647747
+risk_targeted_allocation_d3,0.29942835
+risk_targeted_allocation_d4,0.39427158
+N_add_uniform_first_reaches_R_req,1500.00000000
+N_add_profile_first_reaches_R_req,2000.00000000
+N_add_risk_first_reaches_R_req,1250.00000000

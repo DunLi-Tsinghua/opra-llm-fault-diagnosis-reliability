@@ -1,0 +1,54 @@
+seed: 20260611
+
+domains:
+  - name: Rotating machinery
+    label: "Rotating\nmachinery"
+  - name: Process control
+    label: "Process\ncontrol"
+  - name: Power electronics
+    label: "Power\nelectronics"
+  - name: Robotic-cell troubleshooting
+    label: "Robotic-cell\ntroubleshooting"
+
+failure_modes:
+  - Evidence retrieval
+  - Root-cause reasoning
+  - Grounding/citation
+  - Unsafe recommendation
+
+validation_sample_sizes: [600, 500, 420, 360]
+
+profiles:
+  nominal: [0.35, 0.25, 0.25, 0.15]
+  stressed: [0.10, 0.20, 0.30, 0.40]
+
+true_theta:
+  - [0.9990, 0.00030, 0.00025, 0.00020, 0.00025]
+  - [0.9970, 0.00080, 0.00070, 0.00060, 0.00090]
+  - [0.9940, 0.00180, 0.00150, 0.00120, 0.00150]
+  - [0.9880, 0.00320, 0.00300, 0.00220, 0.00360]
+
+prior:
+  failure_prior_share: [0.26, 0.28, 0.21, 0.25]
+  classical_success: [0.9970, 0.9950, 0.9920, 0.9850]
+  classical_eta: [20.0, 20.0, 20.0, 20.0]
+  imprecise_q0_low: [0.9900, 0.9860, 0.9800, 0.9700]
+  imprecise_q0_high: [0.9995, 0.9985, 0.9965, 0.9920]
+  imprecise_eta_low: [2.0, 2.0, 2.0, 2.0]
+  imprecise_eta_high: [35.0, 35.0, 35.0, 35.0]
+
+severity_weights: [0.25, 0.50, 0.40, 0.98]
+
+requirements:
+  R_req: 0.65
+  tau_safe: 0.006
+
+mission_lengths:
+  profile_shift: 60
+  validation_planning: 45
+  unsafe_screening: [45, 60, 100]
+
+validation_planning_grid:
+  start: 0
+  stop: 3000
+  step: 250

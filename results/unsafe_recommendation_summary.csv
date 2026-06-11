@@ -1,0 +1,5 @@
+quantity,value,threshold_used,deployment_implication
+p_hat_unsafe,0.00492,single-demand tau_safe=0.006,Below the single-demand threshold used in the controlled numerical experiments.
+p_hat_mission_unsafe(45),0.199,mission-level value reported for screening only,Shows how repeated demands can make an at-least-one unsafe-event screen deployment-relevant if a mission-level threshold is specified.
+p_hat_mission_unsafe(60),0.256,mission-level value reported for screening only,Shows how repeated demands can make an at-least-one unsafe-event screen deployment-relevant if a mission-level threshold is specified.
+p_hat_mission_unsafe(100),0.389,mission-level value reported for screening only,Shows how repeated demands can make an at-least-one unsafe-event screen deployment-relevant if a mission-level threshold is specified.

@@ -1,0 +1,4 @@
+allocation_strategy,first_grid_point_reaching_R_req,interpretation
+risk-targeted,1250,Prioritizes high-profile domains with lower or more uncertain failure-free probability; reaches the requirement earliest.
+uniform,1500,Allocates additional expert-adjudicated validation demands evenly across domains.
+profile-proportional,2000,Allocates validation demands in proportion to the nominal operational profile.

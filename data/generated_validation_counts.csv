@@ -1,0 +1,5 @@
+domain,N,failure_free,Evidence retrieval,Root-cause reasoning,Grounding/citation,Unsafe recommendation
+Rotating machinery,600,600,0,0,0,0
+Process control,500,497,0,1,0,2
+Power electronics,420,416,2,0,1,1
+Robotic-cell troubleshooting,360,354,1,0,2,3

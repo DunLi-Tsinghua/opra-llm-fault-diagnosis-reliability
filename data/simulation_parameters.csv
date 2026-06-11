@@ -1,0 +1,80 @@
+parameter,domain_or_index,value
+seed,,20260611
+D,,4
+M,,4
+R_req,,0.65
+tau_safe,,0.006
+mission_n_profile_shift,,60
+mission_n_validation_planning,,45
+unsafe_mission_lengths,,45;60;100
+validation_planning_grid,,0:250:3000
+finite_prior_scenario_set_K_num,,q0 vertices from imprecise_q0_low/high crossed with eta_low/eta_high
+finite_profile_scenario_set_P_num,,nominal and stressed operational profiles
+task_domain,1,Rotating machinery
+validation_sample_size_N_d,Rotating machinery,600
+nominal_profile_pi0,Rotating machinery,0.35000000
+stressed_profile_pi1,Rotating machinery,0.10000000
+classical_prior_success,Rotating machinery,0.99700000
+classical_prior_eta,Rotating machinery,20.00000000
+imprecise_q0_low,Rotating machinery,0.99000000
+imprecise_q0_high,Rotating machinery,0.99950000
+imprecise_eta_low,Rotating machinery,2.00000000
+imprecise_eta_high,Rotating machinery,35.00000000
+true_theta_0,Rotating machinery,0.99900000
+true_theta_1,Rotating machinery,0.00030000
+true_theta_2,Rotating machinery,0.00025000
+true_theta_3,Rotating machinery,0.00020000
+true_theta_4,Rotating machinery,0.00025000
+task_domain,2,Process control
+validation_sample_size_N_d,Process control,500
+nominal_profile_pi0,Process control,0.25000000
+stressed_profile_pi1,Process control,0.20000000
+classical_prior_success,Process control,0.99500000
+classical_prior_eta,Process control,20.00000000
+imprecise_q0_low,Process control,0.98600000
+imprecise_q0_high,Process control,0.99850000
+imprecise_eta_low,Process control,2.00000000
+imprecise_eta_high,Process control,35.00000000
+true_theta_0,Process control,0.99700000
+true_theta_1,Process control,0.00080000
+true_theta_2,Process control,0.00070000
+true_theta_3,Process control,0.00060000
+true_theta_4,Process control,0.00090000
+task_domain,3,Power electronics
+validation_sample_size_N_d,Power electronics,420
+nominal_profile_pi0,Power electronics,0.25000000
+stressed_profile_pi1,Power electronics,0.30000000
+classical_prior_success,Power electronics,0.99200000
+classical_prior_eta,Power electronics,20.00000000
+imprecise_q0_low,Power electronics,0.98000000
+imprecise_q0_high,Power electronics,0.99650000
+imprecise_eta_low,Power electronics,2.00000000
+imprecise_eta_high,Power electronics,35.00000000
+true_theta_0,Power electronics,0.99400000
+true_theta_1,Power electronics,0.00180000
+true_theta_2,Power electronics,0.00150000
+true_theta_3,Power electronics,0.00120000
+true_theta_4,Power electronics,0.00150000
+task_domain,4,Robotic-cell troubleshooting
+validation_sample_size_N_d,Robotic-cell troubleshooting,360
+nominal_profile_pi0,Robotic-cell troubleshooting,0.15000000
+stressed_profile_pi1,Robotic-cell troubleshooting,0.40000000
+classical_prior_success,Robotic-cell troubleshooting,0.98500000
+classical_prior_eta,Robotic-cell troubleshooting,20.00000000
+imprecise_q0_low,Robotic-cell troubleshooting,0.97000000
+imprecise_q0_high,Robotic-cell troubleshooting,0.99200000
+imprecise_eta_low,Robotic-cell troubleshooting,2.00000000
+imprecise_eta_high,Robotic-cell troubleshooting,35.00000000
+true_theta_0,Robotic-cell troubleshooting,0.98800000
+true_theta_1,Robotic-cell troubleshooting,0.00320000
+true_theta_2,Robotic-cell troubleshooting,0.00300000
+true_theta_3,Robotic-cell troubleshooting,0.00220000
+true_theta_4,Robotic-cell troubleshooting,0.00360000
+failure_prior_share,Evidence retrieval,0.26000000
+severity_weight,Evidence retrieval,0.25000000
+failure_prior_share,Root-cause reasoning,0.28000000
+severity_weight,Root-cause reasoning,0.50000000
+failure_prior_share,Grounding/citation,0.21000000
+severity_weight,Grounding/citation,0.40000000
+failure_prior_share,Unsafe recommendation,0.25000000
+severity_weight,Unsafe recommendation,0.98000000
